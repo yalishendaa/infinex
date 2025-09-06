@@ -1,0 +1,22 @@
+{
+  "name": "bullrun-tracker",
+  "version": "1.0.0",
+  "description": "Node.js скрипт для мониторинга топ-игроков в Infinex CardRun",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "import-data": "node import-api-data.js",
+    "rounds-status": "node manage-rounds.js status",
+    "rounds-update": "node manage-rounds.js update",
+    "decks-stats": "node manage-decks.js stats",
+    "decks-clean": "node manage-decks.js clean"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "sqlite3": "^5.1.6"
+  },
+  "keywords": ["infinex", "cardrun", "tracker", "monitoring"],
+  "author": "",
+  "license": "MIT"
+}
